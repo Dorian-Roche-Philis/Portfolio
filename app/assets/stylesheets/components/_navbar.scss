@@ -10,3 +10,43 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.work-item.container:nth-child(3) .fun {
+    left: -2%;
+    top: 65%;
+    width: 22vw;
+}
+.work-item.container .fun {
+    position: absolute;
+    pointer-events: none;
+    z-index: 5;
+}
+img {
+    border-style: none;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: GT America Standard Regular,sans-serif;
+}
+html, html a {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+::selection {
+    background: #000;
+    text-shadow: none;
+    color: #fff;
+}
