@@ -1,7 +1,9 @@
 .banner {
+  position:sticky;
+  top:5vh;
+  z-index:-2;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
 }
 
 .banner h1 {
