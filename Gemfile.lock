@@ -198,7 +198,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  animate-rails
+  animate-rails (~> 1.0, >= 1.0.10)
   autoprefixer-rails
   bootsnap
   dotenv-rails
