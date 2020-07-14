@@ -4,9 +4,10 @@
   z-index:2;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background: white;
-  box-shadow: 0 4px 2px -2px lightgrey;
+  justify-content:space-around;
+  background: transparent;
+  box-shadow: 0 4px 2px -2px transparent;
+  text-color:white!important;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -16,43 +17,26 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
-
-.work-item.container:nth-child(3) .fun {
-    left: -2%;
-    top: 65%;
-    width: 22vw;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
 }
-.work-item.container .fun {
-    position: absolute;
-    pointer-events: none;
-    z-index: 5;
+.site-header_nav{
+  color:white;
+  position:fixed;
+  top:60px;
+  right:60px;
+  font-size:2rem;
+  font-family: 'Roboto Slab', serif;
 }
-img {
-    border-style: none;
-}
-* {
-    box-sizing: border-box;
-}
-body {
-    font-family: GT America Standard Regular,sans-serif;
-}
-html, html a {
-    -webkit-font-smoothing: antialiased!important;
-    -moz-osx-font-smoothing: grayscale;
-}
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-}
-user agent stylesheet
-html {
-    color: -internal-root-color;
-}
-::-webkit-scrollbar {
-    width: 0;
-}
-::selection {
-    background: #000;
-    text-shadow: none;
-    color: #fff;
+.site-header_logo{
+  color:white;
+  position:fixed;
+  top:60px;
+  left:60px;
+  font-size:3rem;
+  font-family: 'Roboto Slab', serif;
+  .site-header_logo:hover{
+    outline-style: none;
+    color:white;
+  }
 }

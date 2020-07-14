@@ -1,1 +1,17 @@
 // Specific CSS for your home-page
+
+body{
+  background: transparent;
+  color: white;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', serif;
+
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
+a:hover{
+    color:white;
+    text-decoration:none;
+}
