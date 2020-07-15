@@ -1,6 +1,6 @@
 .btn-flat {
   color: white;
-  padding: 8px 24px;
+  padding: .55em 1.667em;
   border-radius: 4px;
   background: transition;
   transition: background 0.3s ease;
@@ -26,8 +26,14 @@
     -webkit-transition-timing-function: cubic-bezier(.65,.05,.36,1);
     transition-timing-function: cubic-bezier(.65,.05,.36,1);
 }
-.discover{
+.discover {
   position:absolute;
   bottom: 120px;
   left:120px;
+  padding-top: 70px;
+    padding-bottom: 60px;
+    display:none;
+}
+.visi {
+  display:block;
 }

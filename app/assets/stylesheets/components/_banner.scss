@@ -1,3 +1,153 @@
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+.kenburns-top {
+  -webkit-animation: kenburns-top 20s ease-out both;
+          animation: kenburns-top 20s ease-out both;
+}
+@-webkit-keyframes tournerev {
+  0% {
+clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0);
+  }
+    20%{
+clip-path: polygon(50% 50%, 100% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0);
+
+
+    }
+    40%{
+clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 0, 50% 0);
+
+    }
+60%{
+clip-path: polygon(50% 50%, 0 100%, 0 100%, 0 100%, 0 100%, 0 0, 50% 0);
+}
+  80% {
+
+clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0, 50% 0);
+
+}
+100% {
+  clip-path: polygon(50% 50%, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0);
+
+}
+}
+@keyframes tournerev {
+  0% {
+clip-path: polygon(50% 50%, 50% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0);
+  }
+    20%{
+clip-path: polygon(50% 50%, 100% 0, 100% 0, 100% 100%, 0 100%, 0 0, 50% 0);
+
+
+    }
+    40%{
+clip-path: polygon(50% 50%, 100% 100%, 100% 100%, 100% 100%, 0 100%, 0 0, 50% 0);
+
+    }
+60%{
+clip-path: polygon(50% 50%, 0 100%, 0 100%, 0 100%, 0 100%, 0 0, 50% 0);
+}
+  80% {
+
+clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0, 50% 0);
+
+}
+100% {
+  clip-path: polygon(50% 50%, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0, 50% 0);
+
+}
+}
+@-webkit-keyframes tourne {
+  0% {
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
+  }
+    20%{
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 0 100%, 0 100%, 0 0, 100% 0);
+
+
+    }
+    40%{
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 0 0, 0 0, 0 0, 100% 0);
+
+    }
+60%{
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 100% 0, 100% 0, 100% 0, 100% 0);
+}
+  80% {
+
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+
+}
+100% {
+clip-path: polygon(50% 100%, 50% 100%, 50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%);
+
+}
+}
+
+@keyframes tourne {
+  0% {
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
+  }
+    20%{
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 0 100%, 0 100%, 0 0, 100% 0);
+
+
+    }
+    40%{
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 0 0, 0 0, 0 0, 100% 0);
+
+    }
+60%{
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 100% 0, 100% 0, 100% 0, 100% 0);
+}
+  80% {
+
+clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 100% 100%, 100% 100%, 100% 100%, 100% 100%);
+
+}
+100% {
+clip-path: polygon(50% 100%, 50% 100%, 50% 50%, 50% 100%, 50% 100%, 50% 100%, 50% 100%);
+
+}
+}
+
+.animationr{
+  -webkit-animation: tournerev 2s linear;
+          animation: tournerev 2s linear;
+          z-index:10;
+}
+.animationl{
+  -webkit-animation: tourne 2s linear;
+          animation: tourne 2s linear;
+          z-index:10;
+}
+
+
 .banner {
   position: absolute;
   top:0;
@@ -56,91 +206,46 @@
   -ms-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
 }
-
 .panel-left{
  right: 50%;
   -webkit-transform-origin: 100% 50%;
   -ms-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
 }
+
 .projects .project-panel{
   position:relative;
   float:left;
 }
-.background-francefineart{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('francefineart.jpg');
+.background0{
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('francefineart.jpg');
   background-size: cover;
 }
 .background-green{
-  background-color: #a8d3ae;
+  background-color: #FDD1A2;
 }
-.background-camea{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
+.background1{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
   background-size: cover;
 }
 .background-blue{
   background-color: #52c1c5;
 }
-.background-monurent{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
+.background2{
+  background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
   background-size: cover;
 }
 .background-black{
-  background-color: #0000;
+  background-color: #1a1816;
 }
-.background-modernart{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('francefineart.jpg');
+.background3{
+  background-image: url('Modernart.jpeg');
   background-size: cover;
 }
-.background-green{
-  background-color: #a8d3ae;
+.background-pink{
+  background-color: #F28888;
 }
-.project-clock {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size:200px;
-}
-.clock__display{
-  display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    font-family: "ApercuPro",Arial;
-    font-weight: 400;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    white-space: nowrap;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.clock__dial {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-.clock__dial__hour{
-  cursor: pointer;
-  pointer-events: all;
-  fill: rgba(255,255,255,0);
-  fill-opacity: 1;
-  stroke: none;
-}
-.clock__dial__default, .clock__dial__hour, .clock__dial__minutes, .clock__dial__progress{
-  stroke:currentColor;
-}
+
 .color-white{
 color:white;
 }
