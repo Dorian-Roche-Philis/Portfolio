@@ -8,6 +8,7 @@
   background: transparent;
   box-shadow: 0 4px 2px -2px transparent;
   text-color:white!important;
+  z-index:200;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -27,7 +28,6 @@
   right:60px;
   font-size:16px;
   font-family: 'Roboto', sans-serif;
-  z-index:2000;
 }
 .site-header_logo{
   color:white;
@@ -36,7 +36,6 @@
   left:60px;
   font-size:1.8rem;
   font-family: 'Roboto Slab', serif;
-  z-index:2000;
   .site-header_logo:hover{
     outline-style: none;
     color:white;
