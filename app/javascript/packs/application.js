@@ -4,7 +4,7 @@ require("@rails/activestorage").start()
 require("channels")
 
 import "bootstrap";
-import { projectPlay } from '../components/project';
+import { projectPlay } from '../components/projectnew';
 
 document.addEventListener('turbolinks:load', () => {
 
@@ -12,4 +12,5 @@ if (document.querySelector('.project')) {
 
     projectPlay();
   }
+
 });
