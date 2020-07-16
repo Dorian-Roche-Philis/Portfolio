@@ -2,9 +2,20 @@ const projectPlay = () => {
     //document.querySelector(`#backgroundr${i}`).classList.add('kenburns-top');
   let liste = document.querySelector('.active > .project-panel > .discover > h2');
   let textbuttonne = liste.innerText.split(" ").join("");
-  setTimeout(() => {
+  let t = 0;
+  t = setTimeout(() => {
       projectTourne(textbuttonne);
     }, 8000);
+  let buttons = document.querySelectorAll('.btn')
+    buttons.forEach((button) => {
+      button.addEventListener('mouseover', () => {
+        clearTimeout(t);
+      });
+       button.addEventListener('mouseout', () => {
+        projectPlay();
+       });
+
+    });
 
 }
 const projectTourne = (textbutton) => {
