@@ -12,6 +12,21 @@
   color: white;
   box-shadow: inset 0 0 0 1px #fff;
 }
+.btn-flat-black {
+  color: black;
+  padding: .55em 1.667em;
+  border-radius: 4px;
+  background: transition;
+  transition: background 0.3s ease;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
+  border: 1px solid #000;
+  border-radius:2em;
+}
+.btn-flat-black:hover {
+  background: black;
+  color: white;
+  box-shadow: inset 0 0 0 1px #000;
+}
 .projects .project__btn {
     position: relative;
     width: 44px;

@@ -245,6 +245,89 @@ clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
 .color-white{
 color:white;
 }
+
+
 .project-banner{
+  height:40vh;;
+  padding: 160px;
+  top:0vh;
+  margin-top: 0;
+  margin-bottom: 10vh;
+  text-align: center;
   color:black;
+  background-color:white;
 }
+.product-banner{
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 80vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+  transform-style: inherit;
+  background-color:white;
+}
+.product-banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
+}
+.product-banner:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.product-banner:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.product-banner, .product-banner:before {
+  background: 50% 50% / cover;
+}
+#slide1:before {
+  background-image: url("francefineart.jpg");
+  background-attachment: fixed;
+
+}
+
+#slide2 {
+  background-color: white;
+  z-index:2;
+  min-height: 80vh;
+}
+
+#slide3:before {
+  background-image: url("screen-ffa-hp.png");
+  background-attachment: fixed;
+}
+
+#slide4 {
+  background: #222;
+}
+#title {
+  background-color: white;
+  z-index:2;
+  min-height: 60vh!important;
+}
+.product-banner > img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.product-banner > img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+
+

@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  layout "parallax"
 
   before_action :set_project, only: [:show]
   def show
