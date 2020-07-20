@@ -1,3 +1,22 @@
+@-webkit-keyframes change {
+  0% { width: 50%;
+  }
+  100%{
+    width: 100%!important;
+  }
+}
+@keyframes change {
+      0% { width: 50%;
+  }
+  100%{
+    width: 100%!important;
+  }
+}
+.changes{
+  -webkit-animation: change 4s ease-out;
+          animation: change 4s ease-out;
+}
+
 @-webkit-keyframes kenburns-top {
   0% {
     -webkit-transform-origin: bottom left;
@@ -214,12 +233,7 @@ clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
-.h-100{
-  height:100vh;
-}
-.w-50{
-  width: 50vw;
-}
+
 .projects-panel{
   position: fixed;
     top: 50%;
