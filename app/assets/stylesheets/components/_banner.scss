@@ -1,21 +1,4 @@
-@-webkit-keyframes change {
-  0% { width: 50%;
-  }
-  100%{
-    width: 100%!important;
-  }
-}
-@keyframes change {
-      0% { width: 50%;
-  }
-  100%{
-    width: 100%!important;
-  }
-}
-.changes{
-  -webkit-animation: change 4s ease-out;
-          animation: change 4s ease-out;
-}
+
 
 @-webkit-keyframes kenburns-top {
   0% {
