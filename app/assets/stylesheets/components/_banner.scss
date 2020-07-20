@@ -1,35 +1,81 @@
 @-webkit-keyframes kenburns-top {
   0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.0);
+    /* Opera */
+
+    -moz-transform: scale(1.0);
+    /* Firefox */
   }
   100% {
-    -webkit-transform: scale(1.2) translateY(-10px);
-            transform: scale(1.2) translateY(-10px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.2);
+    /* Opera */
+
+    -moz-transform: scale(1.2);
+    /* Firefox */
   }
 }
 @keyframes kenburns-top {
-  0% {
-    -webkit-transform: scale(1) translateY(0);
-            transform: scale(1) translateY(0);
-    -webkit-transform-origin: 50% 16%;
-            transform-origin: 50% 16%;
+    0% {
+    -webkit-transform-origin: bottom left;
+    -moz-transform-origin: bottom left;
+    -ms-transform-origin: bottom left;
+    -o-transform-origin: bottom left;
+    transform-origin: bottom left;
+    transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.0);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.0);
+    /* Opera */
+
+    -moz-transform: scale(1.0);
+    /* Firefox */
   }
   100% {
-    -webkit-transform: scale(1.2) translateY(-10px);
-            transform: scale(1.2) translateY(-10px);
-    -webkit-transform-origin: top;
-            transform-origin: top;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+
+    -webkit-transform: scale(1.2);
+    /* Safari and Chrome */
+
+    -o-transform: scale(1.2);
+    /* Opera */
+
+    -moz-transform: scale(1.2);
+    /* Firefox */
   }
 }
 .kenburns-top {
-  -webkit-animation: kenburns-top 40s ease-out infinite;
-          animation: kenburns-top 40s ease-out infinite;
-          z-index:-1;
+  animation: kenburns-top 50s ease infinite;
+  /* Add infinite to loop. */
+
+  -ms-animation: kenburns-top 50s ease infinite;
+  -webkit-animation: kenburns-top 50s ease infinite;
+  -o-animation: kenburns-top 50s ease infinite;
+  -moz-animation: kenburns-top 50s ease infinite;
 }
 @-webkit-keyframes tournerev {
   0% {
@@ -177,8 +223,7 @@ clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
 .projects-panel{
   position: fixed;
     top: 50%;
-    width: 100%;
-    height: 200vw;
+    width: 50%;
     -webkit-transform: translate(0,-50%);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
@@ -191,41 +236,34 @@ clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
     bottom: 0;
     opacity: 0;
     visibility: hidden;
+    overflow: hidden;
+    max-height: 100vh;
 }
 .projects .active{
   opacity: 1;
   visibility:visible;
-}
-.panel-right{
- left: 50%;
-  -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-}
-.panel-left{
- right: 50%;
-  -webkit-transform-origin: 100% 50%;
-  -ms-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
+
 }
 
 .projects .project-panel{
   position:relative;
   float:left;
+
 }
 .background0{
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('francefineart.jpg');
   background-size: cover;
 }
 .background-green{
-  background-color: #FDD1A2;
+  background-color: #FDD1A2!important;
+  z-index:4;
 }
 .background1{
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
   background-size: cover;
 }
 .background-blue{
-  background-color: #52c1c5;
+  background-color: #52c1c5!important;
 }
 .background2{
   background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
@@ -233,13 +271,14 @@ clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
 }
 .background-black{
   background-color: #1a1816;
+  z-index:4;
 }
 .background3{
   background-image: url('Modernart.jpeg');
   background-size: cover;
 }
 .background-pink{
-  background-color: #F28888;
+  background-color: #F28888!important;
 }
 
 .color-white{
@@ -307,7 +346,67 @@ color:white;
 }
 
 #slide4 {
-  background: #222;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
+}
+#slide5:before {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
+  background-attachment: fixed;
+
+}
+
+#slide6 {
+  background-color: white;
+  z-index:2;
+  min-height: 80vh;
+}
+
+#slide7:before {
+  background-image: url("screen-ffa-hp.png");
+  background-attachment: fixed;
+}
+
+#slide8 {
+  background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
+}
+#slide9:before {
+  background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
+  background-attachment: fixed;
+
+}
+
+#slide10 {
+  background-color: white;
+  z-index:2;
+  min-height: 80vh;
+}
+
+#slide11:before {
+  background-image: url("screen-ffa-hp.png");
+  background-attachment: fixed;
+}
+
+#slide12 {
+  background-image: url('Modernart.jpeg');
+}
+#slide13:before {
+  background-image: url('Modernart.jpeg');
+  background-attachment: fixed;
+
+}
+
+#slide14 {
+  background-color: white;
+  z-index:2;
+  min-height: 80vh;
+}
+
+#slide15:before {
+  background-image: url("screen-ffa-hp.png");
+  background-attachment: fixed;
+}
+
+#slide16 {
+ background-image: url("francefineart.jpg");
 }
 #title {
   background-color: white;
@@ -328,6 +427,27 @@ color:white;
 .product-banner > img:last-of-type {
   transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
 }
-
+.title {
+  width: 50%;
+  height:100%;
+  padding: 0%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.titleright {
+  width: 50%;
+  height:100%;
+  padding: 0%;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.content {
+  text-align: center;
+  color:white;
+  position:relative;
+  top:60%;
+  }
 
 
