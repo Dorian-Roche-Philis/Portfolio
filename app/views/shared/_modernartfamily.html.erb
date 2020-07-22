@@ -1,17 +1,37 @@
+<div id="frame">
+  <div class="project-banner left background-pink h-100 w-100">
+    <%= render 'shared/navbar' %>
+  <div class="discover-right visi" id="discover4">
+          <h2>Modern Art Family</h2>
+          <p>Agence Artistique</p>
+          <button type="button" class="btn btn-flat over" >Discover</button>
+        </div>
+</div>
+</div>
+    <div class="replace">
 
-<div id="slide13" class="product-banner">
-    </div>
-    <div id="slide14" class="product-banner">
-      <%= image_tag "fun-petals.png" %>
-      <%= image_tag "fun-petals-shadow.png" %>
-    </div>
-    <div id="slide15" class="product-banner"></div>
-    <div id="slide16" class="product-banner">
-      <div class="title background-green">
-        <div class="content">
-          <h1>FranceFineArt</h1>
-          <p>Revue culturelle sur l'actualité des Arts</p>
-          <a class="btn btn-flat over" href="1">Discover</a>
+        <div class = "product-banner" id="title">
+          <h1><%= @project.name.capitalize %></h1>
+          <p><%= @project.description.capitalize %></p>
+        </div>
+  <div id="slide13" class="product-banner">
+      </div>
+      <div id="slide14" class="product-banner">
+        <%= image_tag "fun-petals.png" %>
+        <%= image_tag "fun-petals-shadow.png" %>
+        <div class="titleright" style="color:black; text-align: center">
+          <h2>Agence artistaique de pur street artistes</h2>
+          <a class="btn btn-flat-black over" href="https://modernartfamily.com/" target="blank" rel="noreferrer">Website</a>
+        </div>
+      </div>
+      <div id="slide15" class="product-banner"></div>
+      <div id="slide16" class="product-banner">
+        <div class="title background-green">
+          <div class="content">
+            <h1>FranceFineArt</h1>
+            <p>Revue culturelle sur l'actualité des Arts</p>
+            <a class="btn btn-flat over" href="1">Discover</a>
+          </div>
         </div>
       </div>
     </div>

@@ -1,15 +1,15 @@
-
-  <div class = "product-banner" id="title">
-    <h1><%= @project.name.capitalize %></h1>
-    <p><%= @project.description.capitalize %></p>
-  </div>
-  <% if (params[:id] == "1") %>
-      <%= render 'shared/francefineart' %>
-      <% elsif (params[:id] == "2")%>
-      <%= render 'shared/camea' %>
-      <% elsif (params[:id] == "3")%>
-      <%= render 'shared/monurent' %>
-      <% elsif (params[:id] == "4")%>
-      <%= render 'shared/modernartfamily' %>
+     <% content_for :head do %>
+      <meta name="turbolinks-cache-control" content="no-cache">
     <% end %>
+      <% if (params[:id] == "1") %>
+          <%= render 'shared/francefineart' %>
+          <% elsif (params[:id] == "2")%>
+          <%= render 'shared/camea' %>
+          <% elsif (params[:id] == "3")%>
+          <%= render 'shared/monurent' %>
+          <% elsif (params[:id] == "4")%>
+          <%= render 'shared/modernartfamily' %>
+        <% end %>
+
+
 

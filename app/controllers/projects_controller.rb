@@ -3,7 +3,6 @@ class ProjectsController < ApplicationController
 
   before_action :set_project, only: [:show]
   def show
-
   end
 
   private

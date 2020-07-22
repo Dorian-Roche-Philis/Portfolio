@@ -284,14 +284,11 @@ color:white;
 
 
 .project-banner{
-  height:40vh;;
-  padding: 160px;
+  position: absolute;
   top:0vh;
   margin-top: 0;
-  margin-bottom: 10vh;
-  text-align: center;
-  color:black;
-  background-color:white;
+  color:white;
+  z-index:100;
 }
 .product-banner{
   position: relative;
@@ -446,5 +443,7 @@ color:white;
   position:relative;
   top:60%;
   }
-
+.d-none{
+display: none;
+}
 

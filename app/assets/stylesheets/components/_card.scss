@@ -1,0 +1,33 @@
+@keyframes anim{
+     0% { clip-path: inset(0 50% 0 0);}
+     100%{clip-path: inset(0 0 0 0);}
+
+}
+.left {
+  display:none;
+}
+.anim-trans {
+  animation: anim 1.2s forwards cubic-bezier(0,0,.58,1);
+  display:block;
+}
+@keyframes anim-rev{
+     0% { clip-path: inset(0 0 0 50%);}
+     100%  { clip-path: inset(0 0 0 0); }
+
+}
+@keyframes anim-reverse{
+     0% { clip-path: inset(0 0 0 0);}
+     100%  { clip-path: inset(0 0 0 100%); }
+
+}
+.anim-trans-rev {
+  animation: anim-rev 1.2s forwards cubic-bezier(0,0,.58,1);
+  display:block;
+  }
+  .anim-trans-reverse {
+  animation: anim-reverse 2s forwards cubic-bezier(.39,0,1,.99);
+  display:block;
+  }
+  .turbolinks-progress-bar {
+  visibility: hidden;
+}

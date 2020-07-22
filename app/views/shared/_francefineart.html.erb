@@ -1,23 +1,44 @@
 
-    <div id="slide1" class="product-banner">
-    </div>
-    <div id="slide2" class="product-banner">
-      <%= image_tag "fun-petals.png" %>
-      <%= image_tag "fun-petals-shadow.png" %>
-      <div class="titleright">
-        <div class="content" style="color:black;">
-          <h4>Une encyclopédie des expositions avec un contenu exclusif</h4>
-          <a class="btn btn-flat-black over" href="https://francefineart.com/" target="blank">Website</a>
+
+
+<div id="frame">
+  <div class="project-banner left background-green h-100 w-100">
+    <%= render 'shared/navbar' %>
+  <div class="discover visi" id="discover1">
+          <h2>FranceFineArt</h2>
+          <p>Revue culturelle des Arts</p>
+          <button type="button" class="btn btn-flat over" >Discover</button>
+        </div>
+</div>
+</div>
+<div class="replace">
+      <div class = "product-banner" id="title">
+        <h1><%= @project.name.capitalize %></h1>
+        <p><%= @project.description.capitalize %></p>
+      </div>
+      <div id="slide1" class="product-banner">
+      </div>
+      <div id="slide2" class="product-banner">
+        <%= image_tag "fun-petals.png" %>
+        <%= image_tag "fun-petals-shadow.png" %>
+        <div class="titleright">
+          <div class="content" style="color:black;">
+            <h4>Une encyclopédie des expositions avec un contenu exclusif</h4>
+            <a class="btn btn-flat-black over" href="https://francefineart.com/" target="blank" rel="noreferrer">Website</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="slide3" class="product-banner"></div>
-    <div id="slide4" class="product-banner">
-      <div class="titleright background-blue" style ="background-color: #52c1c5">
-        <div class="content">
-          <h1>Camea</h1>
-          <p>Collaboration entre filmakers</p>
-          <a class="btn btn-flat over" href="2">Discover</a>
+      <div id="slide3" class="product-banner"></div>
+      <div id="slide4" class="product-banner">
+        <div class="titleright background-blue" style ="background-color: #52c1c5">
+          <div class="content">
+            <h1>Camea</h1>
+            <p>Collaboration entre filmakers</p>
+            <a class="btn btn-flat over" href="2">Discover</a>
+          </div>
         </div>
       </div>
-    </div>
+
+</div>
+
+

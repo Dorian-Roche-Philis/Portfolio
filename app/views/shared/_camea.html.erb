@@ -1,4 +1,20 @@
-<div id="slide5" class="product-banner">
+<div id="frame">
+  <div class="project-banner left background-blue h-100 w-100">
+    <%= render 'shared/navbar' %>
+  <div class="discover-right visi" id="discover2">
+          <h2>Camea</h2>
+          <p>Collaboration entre filmakers</p>
+          <button type="button" class="btn btn-flat over" >Discover</button>
+        </div>
+</div>
+</div>
+  <div class="replace">
+
+      <div class = "product-banner" id="title">
+        <h1><%= @project.name.capitalize %></h1>
+        <p><%= @project.description.capitalize %></p>
+      </div>
+      <div id="slide5" class="product-banner">
     </div>
     <div id="slide6" class="product-banner">
       <%= image_tag "fun-petals.png" %>
@@ -14,3 +30,4 @@
         </div>
       </div>
     </div>
+  </div>
