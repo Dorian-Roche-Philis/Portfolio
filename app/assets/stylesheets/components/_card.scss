@@ -7,7 +7,7 @@
   display:none;
 }
 .anim-trans {
-  animation: anim 1.2s forwards cubic-bezier(0,0,.58,1);
+  animation: anim 1s forwards cubic-bezier(.18,.02,.64,1);
   display:block;
 }
 @keyframes anim-rev{
@@ -21,11 +21,11 @@
 
 }
 .anim-trans-rev {
-  animation: anim-rev 1.2s forwards cubic-bezier(0,0,.58,1);
+  animation: anim-rev 1s forwards cubic-bezier(.18,.02,.64,1);
   display:block;
   }
   .anim-trans-reverse {
-  animation: anim-reverse 2s forwards cubic-bezier(.39,0,1,.99);
+  animation: anim-reverse 1.5s forwards cubic-bezier(.09,0,1,.31);
   display:block;
   }
   .turbolinks-progress-bar {
