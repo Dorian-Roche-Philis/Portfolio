@@ -45,28 +45,28 @@ const library = () => {
   <div class="discover visi" id="discover1">
           <h2>FranceFineArt</h2>
           <p>Revue culturelle des Arts</p>
-          <button type="button" class="btn btn-flat over" >Discover</button>
+          <a class="btn btn-flat over" >Discover</a>
         </div>
 </div>`;
 let textmaf = `<div class="project-banner left  anim-trans-rev background-pink h-100 w-100">
   <div class="discover-right visi" id="discover4">
           <h2>Modern Art Family</h2>
           <p>Agence Artistique</p>
-          <button type="button" class="btn btn-flat over" >Discover</button>
+          <a class="btn btn-flat over" >Discover</a>
         </div>
 </div>`;
 let textcam = `<div class="project-banner left  anim-trans-rev background-blue h-100 w-100">
   <div class="discover-right visi" id="discover2">
           <h2>Camea</h2>
           <p>Collaboration entre filmakers</p>
-          <button type="button" class="btn btn-flat over" >Discover</button>
+          <a class="btn btn-flat over" >Discover</a>
         </div>
 </div>`;
 let textmon = `<div class="project-banner left  anim-trans background-black h-100 w-100">
   <div class="discover visi" id="discover3">
           <h2>Monurent</h2>
           <p>Site de location de Monuments!</p>
-          <button type="button" class="btn btn-flat over" >Discover</button>
+          <a class="btn btn-flat over" >Discover</a>
         </div>
 </div>`;
 
