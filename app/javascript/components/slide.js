@@ -68,8 +68,8 @@ const textshow = (x, y) => {
     <div id="slide12" class="product-banner">
       <div class="titleright background-pink">
         <div class="content">
-          <h1>Camea</h1>
-          <p>Collaboration entre filmakers</p>
+          <h1>Modern art family</h1>
+          <p>Agence artistique spécialisée dans le street art</p>
           <a class="btn btn-flat over" href="4">Discover</a>
         </div>
       </div>

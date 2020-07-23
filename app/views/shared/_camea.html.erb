@@ -1,33 +1,31 @@
 <div id="frame">
   <div class="project-banner left background-blue h-100 w-100">
     <%= render 'shared/navbar' %>
-  <div class="discover-right visi" id="discover2">
-          <h2>Camea</h2>
-          <p>Collaboration entre filmakers</p>
-          <button type="button" class="btn btn-flat over" >Discover</button>
-        </div>
-</div>
-</div>
-  <div class="replace">
-
-      <div class = "product-banner" id="title">
-        <h1><%= @project.name.capitalize %></h1>
-        <p><%= @project.description.capitalize %></p>
-      </div>
-      <div id="slide5" class="product-banner">
+    <div class="discover-right visi" id="discover2">
+      <h2>Camea</h2>
+      <p>Collaboration entre filmakers</p>
+      <button type="button" class="btn btn-flat over" >Discover</button>
     </div>
-    <div id="slide6" class="product-banner">
-      <%= image_tag "fun-petals.png" %>
-      <%= image_tag "fun-petals-shadow.png" %>
-    </div>
-    <div id="slide7" class="product-banner"></div>
-    <div id="slide8" class="product-banner">
-      <div class="title background-black">
-        <div class="content">
-          <h1>Monurent</h1>
-          <p>Locations de Monuments</p>
-          <a class="btn btn-flat over" href="3">Discover</a>
-        </div>
+  </div>
+</div>
+<div class="replace">
+  <div class = "product-banner" id="title">
+    <h1><%= @project.name.capitalize %></h1>
+    <p><%= @project.description.capitalize %></p>
+  </div>
+  <div id="slide5" class="product-banner"></div>
+  <div id="slide6" class="product-banner">
+    <%= image_tag "fun-petals.png" %>
+    <%= image_tag "fun-petals-shadow.png" %>
+  </div>
+  <div id="slide7" class="product-banner"></div>
+  <div id="slide8" class="product-banner">
+    <div class="title background-black">
+      <div class="content">
+        <h1>Monurent</h1>
+        <p>Locations de Monuments</p>
+        <a class="btn btn-flat over" href="3">Discover</a>
       </div>
     </div>
   </div>
+</div>

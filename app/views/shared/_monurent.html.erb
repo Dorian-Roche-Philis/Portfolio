@@ -1,37 +1,35 @@
 <div id="frame">
   <div class="project-banner left background-black h-100 w-100">
     <%= render 'shared/navbar' %>
-  <div class="discover visi" id="discover3">
-          <h2>Monurent</h2>
-          <p>Site de location de Monuments!</p>
-          <button type="button" class="btn btn-flat over" >Discover</button>
-        </div>
-</div>
+    <div class="discover visi" id="discover3">
+      <h2>Monurent</h2>
+      <p>Site de location de Monuments!</p>
+      <button type="button" class="btn btn-flat over" >Discover</button>
+    </div>
+  </div>
 </div>
 <div class="replace">
-      <div class = "product-banner" id="title">
-        <h1><%= @project.name.capitalize %></h1>
-        <p><%= @project.description.capitalize %></p>
-      </div>
-      <div id="slide9" class="product-banner">
+  <div class = "product-banner" id="title">
+    <h1><%= @project.name.capitalize %></h1>
+    <p><%= @project.description.capitalize %></p>
+  </div>
+  <div id="slide9" class="product-banner"></div>
+  <div id="slide10" class="product-banner">
+    <%= image_tag "fun-petals.png" %>
+    <%= image_tag "fun-petals-shadow.png" %>
+    <div class="titleright" style="color:black; text-align: center">
+      <h2>Un projet de clone Air'b'n'b un peu funky</h2>
+      <a class="btn btn-flat-black over" href="https://monurent.herokuapp.com/" target="blank" rel="noreferrer">Website</a>
     </div>
-    <div id="slide10" class="product-banner">
-      <%= image_tag "fun-petals.png" %>
-      <%= image_tag "fun-petals-shadow.png" %>
-      <div class="titleright" style="color:black; text-align: center">
-        <h2>Un projet de clone Air'b'n'b un peu funky</h2>
-        <a class="btn btn-flat-black over" href="https://monurent.herokuapp.com/" target="blank" rel="noreferrer">Website</a>
-      </div>
-    </div>
-    <div id="slide11" class="product-banner"></div>
-    <div id="slide12" class="product-banner">
-      <div class="titleright background-pink">
-        <div class="content">
-          <h1>Camea</h1>
-          <p>Collaboration entre filmakers</p>
-          <a class="btn btn-flat over" href="4">Discover</a>
-        </div>
+  </div>
+  <div id="slide11" class="product-banner"></div>
+  <div id="slide12" class="product-banner">
+    <div class="titleright background-pink">
+      <div class="content">
+        <h1>Modern art family</h1>
+        <p>Agence artistique spécialisée dans le street art</p>
+        <a class="btn btn-flat over" href="4">Discover</a>
       </div>
     </div>
-
+  </div>
 </div>
