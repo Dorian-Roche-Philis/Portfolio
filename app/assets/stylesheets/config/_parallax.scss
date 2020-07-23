@@ -11,4 +11,8 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  cursor:url("purple-circle.png")1 1, auto!important;
+}
+a{
+  cursor: url("purple-circle.png")1 1, pointer!important;
 }

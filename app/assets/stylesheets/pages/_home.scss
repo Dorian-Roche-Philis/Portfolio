@@ -3,7 +3,7 @@
 body{
   background: transparent;
   color: white;
-  cursor:url("mouse.svg"), auto!important;
+  cursor:url("white-circle.png") 1 1, auto;
 }
 
 h1, h2, h3, h4 {
@@ -16,6 +16,6 @@ p{
 a{
     color:white;
     text-decoration:none;
-    cursor: url("circle.svg") 8 8, pointer!important;
+    cursor: url("purple-circle.png") 1 1, pointer!important;
 }
 
