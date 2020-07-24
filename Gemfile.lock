@@ -79,7 +79,7 @@ GEM
       sassc (>= 1.11)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (1.8.4)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
@@ -212,7 +212,7 @@ DEPENDENCIES
   pry-byebug
   pry-rails
   puma
-  rails (= 6.0.3.2)
+  rails (~> 6.0, >= 6.0.3.2)
   redis
   sassc-rails
   simple_form
