@@ -337,7 +337,7 @@ color:white;
 }
 
 #slide3:before {
-  background-image: url("ffa-2.jpg");
+  background-color:black;
   background-attachment: fixed;
 }
 
@@ -357,6 +357,7 @@ color:white;
 }
 
 #slide7:before {
+  background-color: black;
   background-attachment: fixed;
 }
 
@@ -409,25 +410,25 @@ background-attachment: fixed;
   min-height: 60vh!important;
 }
 
-.product-banner  > .centered {
+.product-banner   > .centered {
   color:white;
   position: absolute;
   top: 60%;
   left: 35%;
   width: 320px;
   height: 240px;
-  transform: translateZ(.25px) scale(1) translateX(-94%) translateY(-100%) rotate(1deg);
+  transform: translateZ(.25px) scale(1) translateX(-94%) translateY(-100%);
   padding: 10px;
 }
 
-.product-banner  > .centered-2 {
+.product-banner   > .centered-2 {
   color:white;
   position: absolute;
   top: 68%;
   left: 35%;
   width: 320px;
   height: 240px;
-  transform: translateZ(.4px) scale(.8) translateX(-90%) translateY(-30%) rotate(-2deg);
+  transform: translateZ(.4px) scale(.8) translateX(-90%) translateY(-30%);
 }
 .title {
   width: 50%;
@@ -450,6 +451,12 @@ background-attachment: fixed;
   color:white;
   position:relative;
   top:50%;
+  }
+  .content-slide {
+  text-align: center;
+  color:white;
+  position:relative;
+  top:5%;
   }
 .d-none{
 display: none;

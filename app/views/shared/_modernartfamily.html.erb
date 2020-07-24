@@ -9,10 +9,14 @@
   </div>
 </div>
 <div class="replace">
-  <div class = "product-banner" id="title">
-    <h1><%= @project.name.capitalize %></h1>
-    <p><%= @project.description.capitalize %></p>
-    <div class="language" style="display: inline-block;padding: 8px">
+ <div class = "row product-banner" id="title">
+    <div class = "col-xs-12 col-md-7 col-lg-8">
+      <h1><%= @project.name.capitalize %></h1>
+      <p><%= @project.description.capitalize %></p>
+
+    </div>
+    <div class="language col-xs-12 col-md-4 col-lg-3" style="display: inline-block;padding: 8px">
+      <p><strong>Technologies</strong></p>
       <%= image_tag "JS.svg",size: "40x40", alt: "logo Javascript" %>
       <%= image_tag "Html5.svg",size: "40x40", alt: "logo Html5" %>
       <%= image_tag "Ruby.svg",size: "40x40", alt: "logo Ruby" %>
@@ -25,7 +29,7 @@
     <%= image_tag "fun-petals.png" %>
     <%= image_tag "fun-petals-shadow.png" %>
     <div class="titleright">
-      <div class="content" style="color:black;">
+      <div class="content-slide" style="color:black;">
         <h2>Agence artistique spécialisée dans le street art</h2>
         <a class="btn btn-flat-black over" href="https://modernartfamily.com/" target="blank" rel="noreferrer">Website</a>
       </div>
