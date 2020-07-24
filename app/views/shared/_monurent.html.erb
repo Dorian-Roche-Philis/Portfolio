@@ -12,6 +12,13 @@
   <div class = "product-banner" id="title">
     <h1><%= @project.name.capitalize %></h1>
     <p><%= @project.description.capitalize %></p>
+    <div class="language" style="display: inline-block;padding: 8px">
+      <%= image_tag "JS.svg",size: "40x40", alt: "logo Javascript" %>
+      <%= image_tag "Html5.svg",size: "40x40", alt: "logo Html5" %>
+      <%= image_tag "Ruby.svg",size: "40x40", alt: "logo Ruby" %>
+      <%= image_tag "ruby on rails.svg",size: "40x40", alt: "logo Ruby on rails" %>
+      <%= image_tag "Heroku.svg",size: "40x40", alt: "Logo heroku" %>
+    </div>
   </div>
   <div id="slide9" class="product-banner"></div>
   <div id="slide10" class="product-banner">

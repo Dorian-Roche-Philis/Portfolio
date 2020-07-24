@@ -9,16 +9,35 @@
   </div>
 </div>
 <div class="replace">
-  <div class = "product-banner" id="title">
-    <h1><%= @project.name.capitalize %></h1>
-    <p><%= @project.description.capitalize %></p>
+  <div class="text">
+    <div class = "product-banner" id="title">
+      <h1><%= @project.name.capitalize %></h1>
+      <p><%= @project.description.capitalize %></p>
+      <div class="language" style="display: inline-block;padding: 8px">
+      <%= image_tag "JS.svg",size: "40x40", alt: "logo Javascript" %>
+      <%= image_tag "Html5.svg",size: "40x40", alt: "logo Html5" %>
+      <%= image_tag "Ruby.svg",size: "40x40", alt: "logo Ruby" %>
+      <%= image_tag "ruby on rails.svg",size: "40x40", alt: "logo Ruby on rails" %>
+      <%= image_tag "Heroku.svg",size: "40x40", alt: "Logo heroku" %>
+    </div>
+    </div>
+
+
   </div>
   <div id="slide5" class="product-banner"></div>
   <div id="slide6" class="product-banner">
-    <%= image_tag "fun-petals.png" %>
-    <%= image_tag "fun-petals-shadow.png" %>
+    <div class="centered-2">
   </div>
-  <div id="slide7" class="product-banner"></div>
+
+  </div>
+  <div id="slide7" class="product-banner">
+    <div class="content">
+<div style="padding:54.71% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/441213766?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+
+    </div>
+
+  </div>
   <div id="slide8" class="product-banner">
     <div class="title background-black">
       <div class="content">

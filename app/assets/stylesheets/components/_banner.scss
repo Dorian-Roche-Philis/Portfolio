@@ -225,6 +225,7 @@ clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
     -ms-transform: translate(0,-50%);
     transform: translate(0,-50%);
 }
+
 .projects .project {
     position: absolute;
     top: 0;
@@ -236,6 +237,7 @@ clip-path: polygon(100% 100%, 50% 100%, 50% 50%, 50% 100%, 0 100%, 0 0, 100% 0);
     overflow: hidden;
     max-height: 100vh;
 }
+
 .projects .active{
   opacity: 1;
   visibility:visible;
@@ -355,7 +357,6 @@ color:white;
 }
 
 #slide7:before {
-  background-image: url("screen-ffa-hp.png");
   background-attachment: fixed;
 }
 
