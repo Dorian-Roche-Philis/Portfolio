@@ -7,5 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
   Project.create(name: 'FranceFineArt', description: 'Revue culturelle des Arts')
   Project.create(name: 'Camea', description: 'Réseau de partage entre filmmakers')
-  Project.create(name: 'Monurent', description: "Clone de Airb'n'b de location de monuments historiques")
-  Project.create(name: 'Modern Art Family', description: "Agence artistique spécialisé dans le street Art")
+  Project.create(name: 'Monurent', description: "Clone Airbnb de location de monuments historiques")
+  Project.create(name: 'Modern Art Family', description: "Agence artistique spécialisée dans le street Art")
