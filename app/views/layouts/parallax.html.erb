@@ -8,6 +8,7 @@
         <%= yield(:head) %>
       <% end %>
     <title>Mr.DoDo</title>
+    <%= favicon_link_tag 'mr.dodo_black.png'%>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'applicationshow', media: 'all', 'data-turbolinks-track': 'reload' %>
