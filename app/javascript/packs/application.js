@@ -15,6 +15,7 @@ let url = "bobo";
 
 
 document.addEventListener('turbolinks:load', () => {
+
 if (document.querySelector('.projects')) {
     library();
     projectPlay();

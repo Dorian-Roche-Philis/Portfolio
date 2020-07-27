@@ -1,9 +1,9 @@
 const slideleft = (x) => {
   if (x == "bobo") {
-    document.querySelector('body').style.overflowY = 'hidden';
+    document.body.style.overflowY = 'hidden';
     document.querySelector('.left').classList.add('anim-trans-reverse');
     document.querySelector('.anim-trans-reverse').addEventListener('animationend', () => {
-    document.querySelector('body').style.overflowY = 'visible';
+    document.body.style.overflowY = 'visible';
 
     });
   } else {
