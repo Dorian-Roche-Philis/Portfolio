@@ -1,9 +1,9 @@
 const slideleft = (x) => {
   if (x == "bobo") {
-    document.querySelector('.left').classList.add('anim-trans-reverse');
     document.querySelector('body').style.overflowY = 'hidden';
+    document.querySelector('.left').classList.add('anim-trans-reverse');
     document.querySelector('.anim-trans-reverse').addEventListener('animationend', () => {
-    document.querySelector('body').style.overflowY = 'scroll';
+    document.querySelector('body').style.overflowY = 'visible';
 
     });
   } else {
@@ -139,9 +139,7 @@ let textmon = `<div class = "remoovemoi">
 }
 
 }
-const stopScroll = () => {
-  window.scrollTo(0, 0);
-}
+
 const hide = (elem) => {
   elem.style.display = 'none';
 }

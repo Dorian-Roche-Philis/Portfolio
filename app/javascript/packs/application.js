@@ -11,7 +11,7 @@ import { model } from '../components/modal';
 
 
 let url = "bobo";
-const reg = /.projects./;
+
 
 
 document.addEventListener('turbolinks:load', () => {
