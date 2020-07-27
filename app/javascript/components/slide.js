@@ -19,7 +19,7 @@ const slideleft = (x) => {
         document.querySelector('.replace').scrollIntoView({behavior : 'smooth'});
         let timer = setTimeout(() => {
       document.querySelector('.remoovemoi').remove();
-    }, 600);
+    }, 800);
 
       }
   }
