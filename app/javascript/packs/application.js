@@ -7,6 +7,7 @@ import "bootstrap";
 import { projectPlay } from '../components/projectnew';
 import { library } from '../components/boubouton';
 import { slideleft } from '../components/slide';
+import { model } from '../components/modal';
 
 
 let url = "bobo";
@@ -23,9 +24,12 @@ if (document.querySelector('.projects')) {
   if (document.querySelector('.product-banner')) {
     slideleft(url);
   }
-
+if (document.querySelector('.modal')) {
+  model();
+ }
 
 });
+
 document.addEventListener('turbolinks:visit', () => {
   url = document.location.href;
 });
