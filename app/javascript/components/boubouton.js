@@ -1,7 +1,9 @@
 const clickbuton = (button,text) => {
 
     button.addEventListener('click', (e) =>{
-      e.preventDefault();
+
+    e.preventDefault();
+    Turbolinks.clearCache();
     let action = document.querySelector('#frame');
     action.insertAdjacentHTML("afterbegin", `${text}`);
     endanim(button);
@@ -14,12 +16,15 @@ const endanim = (x) => {
       document.querySelector('.anim-trans').addEventListener('animationend', () => {
       document.querySelector('.left').classList.add('animated','delay-5','slideOutRight');
       Turbolinks.visit('projects/1');
-      });
+
+    });
+
   } else if (x == document.querySelector('.btn-cam')) {
 
           document.querySelector('.anim-trans-rev').addEventListener('animationend', () => {
         document.querySelector('.left').classList.add('animated','delay-5','slideOutRight');
         Turbolinks.visit('projects/2');
+
       });
 
   } else if (x == document.querySelector('.btn-mon')) {
@@ -27,12 +32,18 @@ const endanim = (x) => {
           document.querySelector('.anim-trans').addEventListener('animationend', () => {
         document.querySelector('.left').classList.add('animated','delay-5','slideOutRight');
         Turbolinks.visit('projects/3');
+
+
       });
   } else if (x == document.querySelector('.btn-maf')) {
 
           document.querySelector('.anim-trans-rev').addEventListener('animationend', () => {
         document.querySelector('.left').classList.add('animated','delay-5','slideOutRight');
-        Turbolinks.visit('projects/4');
+        Turbolinks.visit('projects/4', { action: "replace" });
+        document.addEventListener('turbolinks:before-render', () => {
+        let sup = event.data.newBody.querySelector('.project-banner');
+    sup.classList.remove('.left');
+      });
       });
     }
 

@@ -1,32 +1,19 @@
 const slideleft = (x) => {
-  if (x == "bobo") {
-    document.body.style.overflowY = 'hidden';
-    document.querySelector('.left').classList.add('anim-trans-reverse');
-    document.querySelector('.anim-trans-reverse').addEventListener('animationend', () => {
-    document.body.style.overflowY = 'visible';
+console.log(x);
+const reg = /.projects./;
+if (reg.test(x) ) {
 
-    });
-  } else {
-     const reg = /.projects./;
-
-      if (reg.test(x) ) {
-
-        let truecontent = document.querySelector('.replace');
+        let truecontent = event.data.newBody.querySelector('.replace');
         hide(truecontent);
         textshow(x, truecontent);
-        document.querySelector('body').scrollTop = document.querySelector('body').scrollHeight;
-        show(truecontent);
-        document.querySelector('.replace').scrollIntoView({behavior : 'smooth'});
-        let timer = setTimeout(() => {
-      document.querySelector('.remoovemoi').remove();
-    }, 800);
+
 
       }
-  }
+
 
 }
 const textshow = (x, y) => {
-  let textffa = `<div class = "remoovemoi">
+  let textmaf = `<div class = "remoovemoi">
   <div class = "product-banner" id="title">
         <h1>Modern Art Family</h1>
         <p>Agence Artistique</p>
@@ -51,7 +38,7 @@ const textshow = (x, y) => {
       </div>
     </div>
     </div>`;
-    let textmaf = `<div class = "remoovemoi">
+    let textmon = `<div class = "remoovemoi">
     <div class = "product-banner" id="title">
         <h1>Monuremt</h1>
         <p>des monuments terribles</p>
@@ -76,7 +63,7 @@ const textshow = (x, y) => {
     </div>
     </div>
 `;
-let textcam = `<div class = "remoovemoi">
+let textffa = `<div class = "remoovemoi">
 <div class = "product-banner" id="title">
         <h1>FranceFineArt</h1>
         <p>actualité des arts</p>
@@ -103,7 +90,7 @@ let textcam = `<div class = "remoovemoi">
       </div>
       </div>
 `;
-let textmon = `<div class = "remoovemoi">
+let textcam = `<div class = "remoovemoi">
                 <div class = "product-banner" id="title">
                   <h1>Camea</h1>
                   <p>des superbes bleus</p>
