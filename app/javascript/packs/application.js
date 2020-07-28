@@ -5,7 +5,7 @@ require("channels")
 
 import "bootstrap";
 import { projectPlay } from '../components/projectnew';
-import { library } from '../components/boubouton';
+import { library2 } from '../components/boutonbouton2';
 import { slideleft } from '../components/slide';
 import { model } from '../components/modal';
 import { mobile } from '../components/mobilephone';
@@ -23,15 +23,15 @@ import { homecome } from '../components/homecome';
 
   if (window.matchMedia("(min-width: 400px)").matches) {
       document.addEventListener('turbolinks:load', () => {
+        console.log(url);
         if (document.querySelector('.projects')) {
-          library();
           projectPlay();
         }
         if (document.querySelector('.product-banner')) {
           if (document.querySelector('.remoovemoi')) {
             slideleftb();
           } else {
-            homecome();
+            library2();
           }
         }
         if (document.querySelector('.modal')) {

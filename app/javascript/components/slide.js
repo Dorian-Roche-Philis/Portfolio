@@ -8,7 +8,11 @@ if (reg.test(x) ) {
         textshow(x, truecontent);
 
 
-      }
+      } else {
+    let sup = event.data.newBody.querySelector('.left');
+    sup.classList.add('anim-trans-reverse');
+
+  }
 
 
 }
