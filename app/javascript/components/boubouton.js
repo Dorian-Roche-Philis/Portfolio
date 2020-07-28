@@ -1,6 +1,7 @@
 const clickbuton = (button,text) => {
 
-    button.addEventListener('click', () =>{
+    button.addEventListener('click', (e) =>{
+      e.preventDefault();
     let action = document.querySelector('#frame');
     action.insertAdjacentHTML("afterbegin", `${text}`);
     endanim(button);

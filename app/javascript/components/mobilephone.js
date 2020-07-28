@@ -1,9 +1,9 @@
 const mobile = () => {
-  document.addEventListener('page:change', function() {
-        document.getElementById('primary-content').className += 'animated fadeInLeft';
+  document.addEventListener('turbolinks:request-start', () => {
+        document.body.classList.add('animated','slideOutRight');
 });
-document.addEventListener('page:fetch', function() {
-        document.getElementById('primary-content').className += 'animated fadeOutRight';
-});
+document.addEventListener('turbolinks:before-render', () => {
+        event.data.newBody.classList.add('animated','fadeInLeftBig');
+      });
 }
 export { mobile };
