@@ -10,11 +10,14 @@
   z-index:200;
 }
 .navbar-lewagon-black {
-  position:fixed;
+  position:sticky;
   top:0px;
   left:0px;
 
   z-index:20;
+  width: 100%;
+  height:12vh;
+  background-color: white;
 }
 
 
@@ -22,22 +25,22 @@
 
 .site-header_nav{
   color:white;
-  position:fixed;
-  top:2rem;
+  position:absolute;
+  top:1rem;
   right:2rem;
-  font-size:16px;
+  font-size:24px;
 }
 .site-header_nav-black{
   color:black;
-  position:fixed!important;
-  top:2rem;
+  position:absolute!important;
+  top:1rem;
   right:2rem;
-  font-size:16px;
+  font-size:24px;
 
 }
 .site-header_logo{
-  position:fixed;
-  top:2rem;
+  position:absolute;
+  top:1rem;
   left:2rem;
   font-size:1rem;
   font-family: 'Roboto Slab', serif;

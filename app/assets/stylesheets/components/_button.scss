@@ -4,13 +4,12 @@
   border-radius: 4px;
   background: transition;
   transition: background 0.3s ease;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
+  border: 2px solid white;
   border-radius:2em;
 }
 .btn-flat:hover {
   background: transparent;
   color: white;
-  box-shadow: inset 0 0 0 1px #fff;
 }
 .btn-flat-black {
   color: black;
@@ -18,8 +17,7 @@
   border-radius: 4px;
   background: transition;
   transition: background 0.3s ease;
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.4);
-  border: 1px solid #000;
+  border: 2px solid #000;
   border-radius:2em;
 }
 .btn-flat-black:hover {
