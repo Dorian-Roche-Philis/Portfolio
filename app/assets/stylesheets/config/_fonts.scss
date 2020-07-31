@@ -6,6 +6,30 @@
 $body-font: 'Roboto', sans-serif;
 $headers-font: 'Roboto Slab', serif;
 
+html{
+  font-family:$body-font;
+  font-size:16px;
+}
+h1, h2, h3, h4 {
+  font-family: $headers-font;
+
+}
+h1{
+font-size: 6vw;
+}
+h2{
+  font-size:5vw;
+}
+h3{
+  font-size:3vw;
+}
+h4{
+  font-size:2vw;
+}
+p{
+  font-size: 1rem;
+}
+
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";

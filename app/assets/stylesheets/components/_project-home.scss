@@ -1,0 +1,70 @@
+
+.projects-panel{
+  position: fixed;
+    top: 50%;
+    width: 50%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+
+.projects .project {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    max-height: 100vh;
+}
+
+.projects .active{
+  opacity: 1;
+  visibility:visible;
+
+}
+
+.projects .project-panel{
+  position:relative;
+  float:left;
+
+}
+.background0{
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('francefineart.jpg');
+  background-size: cover;
+}
+.background-green{
+  background-color: $ffa!important;
+  z-index:4;
+}
+.background1{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
+  background-size: cover;
+}
+.background-blue{
+  background-color: $cam!important;
+}
+.background2{
+  background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
+  background-size: cover;
+}
+.background-black{
+  background-color: $mon;
+  z-index:4;
+}
+.background3{
+  background-image: url('Modernart.jpeg');
+  background-size: cover;
+}
+.background-pink{
+  background-color: $maf!important;
+}
+
+.color-white{
+color:white;
+}
+
+
+

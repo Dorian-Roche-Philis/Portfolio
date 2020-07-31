@@ -1,0 +1,176 @@
+.project-banner{
+  position: absolute;
+  top:0vh;
+  margin-top: 0;
+  color:white;
+  z-index:100;
+}
+.product-banner{
+  position: relative;
+  padding: 18vh 10%;
+  min-height: 80vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+  background-color:white;
+}
+.product-banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
+}
+.product-banner:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.product-banner:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.product-banner, .product-banner:before {
+  background: 50% 50% / cover;
+}
+#slide1:before {
+  background-image: url("francefineart.jpg");
+  background-attachment: fixed;
+
+}
+
+#slide2 {
+  background-color: white;
+  z-index:2;
+  min-height: 90vh;
+}
+
+#slide3:before {
+  background-color:black;
+  background-attachment: fixed;
+}
+
+#slide4 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
+}
+#slide5:before {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
+  background-attachment: fixed;
+
+}
+
+#slide6 {
+  background-color: white;
+  z-index:2;
+  min-height: 80vh;
+}
+
+#slide7:before {
+  background-color: black;
+  background-attachment: fixed;
+}
+
+#slide8 {
+  background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
+}
+#slide9:before {
+  background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
+  background-attachment: fixed;
+
+}
+
+#slide10 {
+  background-color: white;
+  z-index:2;
+  min-height: 80vh;
+}
+
+#slide11:before {
+background-image: url('https://images.pexels.com/photos/2363/france-landmark-lights-night.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+background-attachment: fixed;
+}
+
+#slide12 {
+  background-image: url('Modernart.jpeg');
+}
+#slide13:before {
+  background-image: url('Modernart.jpeg');
+  background-attachment: fixed;
+
+}
+
+#slide14 {
+  background-color: white;
+  z-index:2;
+  min-height: 80vh;
+}
+
+#slide15:before {
+  background-image: url("screen-ffa-hp.png");
+  background-attachment: fixed;
+}
+
+#slide16 {
+ background-image: url("francefineart.jpg");
+}
+#title {
+  background-color: white;
+  z-index:2;
+  min-height: 60vh!important;
+}
+
+.product-banner   > .centered {
+  color:white;
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(1) translateX(-94%) translateY(-100%);
+  padding: 10px;
+}
+
+.product-banner   > .centered-2 {
+  color:white;
+  position: absolute;
+  top: 68%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.4px) scale(.8) translateX(-90%) translateY(-30%);
+}
+.title {
+  width: 50%;
+  height:100%;
+  padding: 0%;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.titleright {
+  width: 50%;
+  height:100%;
+  padding: 0%;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.content {
+  text-align: center;
+  color:white;
+  position:relative;
+  top:50%;
+  }
+  .content-slide {
+  text-align: center;
+  color:white;
+  position:relative;
+  top:5%;
+  }
+.d-none{
+display: none;
+}
+
