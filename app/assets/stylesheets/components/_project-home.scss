@@ -66,5 +66,64 @@
 color:white;
 }
 
+@media (min-width: 100px) and (max-width: 575px) {
+.discover {
+  position:fixed;
+  bottom: 120px;
+  left:20vw;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  display:none;
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+.discover {
+  position:fixed;
+  bottom: 120px;
+  left:20vw;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  display:none;
+}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .discover {
+  position:absolute;
+  bottom: 120px;
+  left:20vw;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  display:none;
+}
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+.discover {
+  position:absolute;
+  bottom: 120px;
+  left:20vw;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  display:none;
+}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+.discover {
+  position:absolute;
+  bottom: 120px;
+  left:20vw;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  display:none;
+}
+}
 
 
