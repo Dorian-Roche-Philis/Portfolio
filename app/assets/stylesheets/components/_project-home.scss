@@ -69,23 +69,24 @@ color:white;
 @media (min-width: 100px) and (max-width: 575px) {
 .discover {
   position:fixed;
-  bottom: 120px;
-  left:20vw;
-  padding-top: 70px;
-  padding-bottom: 60px;
-  display:none;
+  left: 25%;
+  top:50%;
+transform:translate(-50%, -50%);  display:none;
+  text-align:center;
 }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 .discover {
-  position:fixed;
+  position:absolute;
   bottom: 120px;
-  left:20vw;
+  left:16%;
   padding-top: 70px;
   padding-bottom: 60px;
   display:none;
+  text-align:center;
+  transform:translate(-50%, -50%);
 }
 }
 
@@ -94,10 +95,12 @@ color:white;
   .discover {
   position:absolute;
   bottom: 120px;
-  left:20vw;
+  left:20%;
   padding-top: 70px;
   padding-bottom: 60px;
   display:none;
+    transform:translate(-50%, -50%);
+
 }
 
 }
@@ -107,10 +110,12 @@ color:white;
 .discover {
   position:absolute;
   bottom: 120px;
-  left:20vw;
+  left:20%;
   padding-top: 70px;
   padding-bottom: 60px;
   display:none;
+    transform:translate(-50%, -50%);
+
 }
 }
 
@@ -123,6 +128,8 @@ color:white;
   padding-top: 70px;
   padding-bottom: 60px;
   display:none;
+    transform:translate(-50%, -50%);
+
 }
 }
 
