@@ -5,7 +5,6 @@ require("channels")
 
 import "bootstrap";
 import { projectPlay } from '../components/projectnew';
-import { library2 } from '../components/boutonbouton2';
 import { slideleft } from '../components/slide';
 import { model } from '../components/modal';
 import { mobile } from '../components/mobilephone';
@@ -30,8 +29,6 @@ import { homecome } from '../components/homecome';
         if (document.querySelector('.product-banner')) {
           if (document.querySelector('.remoovemoi')) {
             slideleftb();
-          } else {
-            library2();
           }
         }
         if (document.querySelector('.modal')) {
