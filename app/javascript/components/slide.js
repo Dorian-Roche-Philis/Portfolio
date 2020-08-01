@@ -1,18 +1,19 @@
 const slideleft = (x) => {
 console.log(x);
-const reg = /.projects./;
-if (reg.test(x) ) {
+ {
 
-        let truecontent = event.data.newBody.querySelector('.replace');
+        let truecontent = document.querySelector('.replace');
         hide(truecontent);
         textshow(x, truecontent);
+        document.documentElement.scrollTop = document.documentElement.scrollHeight;
+        document.querySelector('.replace').style.display = 'block';
+        document.querySelector('.replace').scrollIntoView({behavior : 'smooth'});
+        let timer = setTimeout(() => {
+        document.querySelector('.remoovemoi').remove();
+        }, 800);
 
 
-      } else {
-    let sup = event.data.newBody.querySelector('.left');
-    sup.classList.add('anim-trans-reverse');
-
-  }
+      }
 
 
 }

@@ -14,33 +14,33 @@ import { homecome } from '../components/homecome';
 
 
 
-  let url = document.location.href;
+  let url = null;
 
 
 
 
 
   if (window.matchMedia("(min-width: 400px)").matches) {
+
+
       document.addEventListener('turbolinks:load', () => {
         console.log(url);
         if (document.querySelector('.projects')) {
           projectPlay();
         }
         if (document.querySelector('.product-banner')) {
-          if (document.querySelector('.remoovemoi')) {
-            slideleftb();
+const reg = /.projects./
+          if  (reg.test(url) ) {
+            //document.documentElement.scrollTop = document.documentElement.scrollHeight;
+            slideleft(url);
           }
         }
         if (document.querySelector('.modal')) {
           model();
         }
-      });
-      document.addEventListener('turbolinks:before-render', () => {
-        if (event.data.newBody.querySelector('.product-banner')) {
-          slideleft(url);
-        }
         url = document.location.href;
       });
+
 
   /* the view port is at least 400 pixels wide */
   } else {
