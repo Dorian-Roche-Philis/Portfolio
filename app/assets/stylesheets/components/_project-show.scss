@@ -21,7 +21,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
 }
 .product-banner:nth-child(2n) .title {
   margin-left: 0;
@@ -39,6 +38,20 @@
 .language{
   margin:0 auto;
 }
+
+@media (min-width: 100px) and (max-width: 575px) {
+#slide1:before, #slide4, #slide5:before, #slide8, #slide9:before, #slide11:before, #slide12, #slide13:before, #slide15:before, #slide16 {
+  background-size: unset!important;
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+#slide1:before, #slide4, #slide5:before, #slide8, #slide9:before, #slide11:before, #slide12, #slide13:before, #slide15:before, #slide16 {
+  background-size: unset!important;
+}
+}
+
 #slide1:before {
   background: url("francefineart.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
