@@ -1,7 +1,7 @@
 
 
 <div class="replace">
-  <div class = "row product-banner" id="title">
+  <div class = "row product-banner" id="title" style="justify-content: space-around;">
     <div class = "col-xs-12 col-md-12 col-lg-8">
       <h1><%= @project.name.capitalize %></h1>
       <p><%= @project.description.capitalize %></p>
@@ -21,32 +21,37 @@
       <%= image_tag "Sass.svg",size: "40x40", alt: "logo Sass" %>
        <%= image_tag "PHP-logo.svg",size: "40x40", alt: "Logo php" %>
       <%= image_tag "Acast.svg",size: "40x40", alt: "Logo Acast" %>
+      <br>
+
+          <a class="btn btn-flat-black over" style="margin-top: 8vh" href="https://francefineart.com/" target="blank" rel="noreferrer">Website</a>
 
     </div>
   </div>
   <div id="slide1" class="product-banner">
-    <div class="row">
-      <div class="language col-xs-12 col-md-12 col-lg-4" style="display: inline-block;padding: 8px">
-        <h4 style="color:white">Plugins utilisés:</h4>
-        <p style="color:white"> BluBrry Powerpress, Yoast SEO, Site kit by google, Smart Slider 3</p>
-          <a class="btn btn-flat over" style="margin-top: 8vh" href="https://francefineart.com/" target="blank" rel="noreferrer">Website</a>
+
+    <div class="row" style="justify-content: space-around;">
+      <div class=" col-xs-12 col-md-12 col-lg-4" style="display: inline-block;padding: 8px">
+        <h4 style="color:white">Demandes spécifiques du client:</h4>
+        <br>
+        <p style="color:white">- Hébergement externe des nombreuse photos pour améliorer le chargement du site.
+        <br>- Création d'un feed podcast pour les plateformes d' écoute (i-tunes, google podcast, dezeer, spotify).
+        <br>- Slider adaptable pour visualiser la disposition des expositions de l'agenda culturel.</p>
+
+
+
 </div>
-      <div class = "col-xs-12 col-md-12 col-lg-6" style="display: inline-block;padding: 16px">
+      <div class = "col-xs-12 col-md-12 col-lg-4" style="display: inline-block;padding: 8px">
 
-
+<h4 style="color:white">Plugins utilisés:</h4>
+<br>
+        <p style="color:white"> BluBrry Powerpress, Yoast SEO, Site kit by google, Smart Slider 3.</p>
   </div>
   </div>
     </div>
 
     <div id="slide2" class="product-banner">
-      <div class="centered">
-        <h2 style="color:black">
-          Wordpress, php, chaines podcast, plugins (seo,feed).
-        </h2>
-      </div>
-      <div class="centered-2">
-      </div>
-      <div class="titleright">
+
+
         <div class="content-slide" style="color:black;">
           <button class="btn btn-flat-black over">Preview</button>
             <div class="modal hidden">
@@ -62,7 +67,7 @@
               </div>
             </div>
         </div>
-      </div>
+
     </div>
 
   <div id="slide3" class="product-banner">

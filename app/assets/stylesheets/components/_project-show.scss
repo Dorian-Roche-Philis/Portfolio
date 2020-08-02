@@ -7,8 +7,8 @@
 }
 .product-banner{
   position: relative;
-  padding: 18vh 10%;
-  min-height: 80vh;
+  padding: 16vh 8vw;
+  min-height: 70vh;
   width: 100vw;
   box-sizing: border-box;
   transform-style: inherit;
@@ -35,6 +35,9 @@
 
 .product-banner, .product-banner:before {
   background: 50% 50% / cover;
+}
+.language{
+  margin:0 auto;
 }
 #slide1:before {
   background-image: url("francefineart.jpg");
