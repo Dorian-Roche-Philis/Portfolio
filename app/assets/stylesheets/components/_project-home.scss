@@ -34,6 +34,9 @@
 .background0{
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('francefineart.jpg');
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .background-green{
   background-color: $ffa!important;
@@ -42,6 +45,9 @@
 .background1{
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg');
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .background-blue{
   background-color: $cam!important;
@@ -49,6 +55,9 @@
 .background2{
   background-image: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif');
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .background-black{
   background-color: $mon;
@@ -57,6 +66,9 @@
 .background3{
   background-image: url('Modernart.jpeg');
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 .background-pink{
   background-color: $maf!important;
