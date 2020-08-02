@@ -14,40 +14,42 @@ import { homecome } from '../components/homecome';
 
 
 
-  let url = null;
+  //let url = null;
 
 
 
 
 
-  if (window.matchMedia("(min-width: 400px)").matches) {
+
 
 
       document.addEventListener('turbolinks:load', () => {
-        console.log(url);
+        if (window.matchMedia("(min-width: 400px)").matches) {
+       // console.log(url);
         if (document.querySelector('.projects')) {
-          projectPlay();
+           projectPlay();
         }
-        if (document.querySelector('.product-banner')) {
-const reg = /.projects./
-          if  (reg.test(url) ) {
+        //if (document.querySelector('.product-banner')) {
+//const reg = /.projects./
+          //if  (reg.test(url) ) {
             //document.documentElement.scrollTop = document.documentElement.scrollHeight;
-            slideleft(url);
-          }
-        }
+            //slideleft(url);
+          //}
+       // }
         if (document.querySelector('.modal')) {
           model();
         }
-        url = document.location.href;
-      });
+        //url = document.location.href;
+
 
 
   /* the view port is at least 400 pixels wide */
   } else {
-  document.addEventListener('turbolinks:load', () => {
+
     mobile();
-  });
   }
+  });
+
 
 
 
