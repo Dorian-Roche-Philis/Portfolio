@@ -57,7 +57,7 @@
 }
 
 #slide3:before {
-  background-color:black;
+  background-color:$ffa;
   background-attachment: fixed;
 }
 
@@ -105,7 +105,7 @@
 
 }
 #slide9:before {
-  background: url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif') no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('https://cdn.dribbble.com/users/41854/screenshots/4636719/cleo.gif') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -143,7 +143,7 @@ background: url('https://images.pexels.com/photos/2363/france-landmark-lights-ni
   height: auto;
 }
 #slide13:before {
-  background: url('Modernart.jpeg') no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ),url('Modernart.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -161,7 +161,7 @@ background: url('https://images.pexels.com/photos/2363/france-landmark-lights-ni
 }
 
 #slide15:before {
-  background: url("screen-ffa-hp.png") no-repeat center center fixed;
+  background-color:$maf;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
