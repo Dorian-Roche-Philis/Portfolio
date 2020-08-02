@@ -38,20 +38,6 @@
 .language{
   margin:0 auto;
 }
-
-@media (min-width: 100px) and (max-width: 575px) {
-#slide1:before, #slide4, #slide5:before, #slide8, #slide9:before, #slide11:before, #slide12, #slide13:before, #slide15:before, #slide16 {
-  background-size: unset!important;
-}
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-#slide1:before, #slide4, #slide5:before, #slide8, #slide9:before, #slide11:before, #slide12, #slide13:before, #slide15:before, #slide16 {
-  background-size: unset!important;
-}
-}
-
 #slide1:before {
   background: url("francefineart.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -195,6 +181,17 @@ background: url('https://images.pexels.com/photos/2363/france-landmark-lights-ni
   height: auto;
 
 }
+@media (min-width: 100px) and (max-width: 575px) {
+#slide1:before, #slide4, #slide5:before, #slide8, #slide9:before, #slide11:before, #slide12, #slide13:before, #slide15:before, #slide16 {
+
+  background-attachment: unset!important;
+}
+}
+
+// Small devices (landscape phones, 576px and up)
+
+
+
 #title {
   background-color: white;
   z-index:2;
