@@ -14,8 +14,12 @@
   </head>
   <body>
 
-    <%= render 'shared/navbar' %>
 
+<% if (params[:action] == "home") %>
+    <%= render 'shared/navbar' %>
+    <% else %>
+    <%= render 'shared/navbar-black' %>
+    <% end %>
       <%= yield %>
 
 

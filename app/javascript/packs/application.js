@@ -30,6 +30,9 @@ import { loadDynamicBannerText } from '../components/banner';
         if (document.querySelector('.projects')) {
            projectPlay();
         }
+        //if (document.querySelector('.about')) {
+         // loadDynamicBannerText();
+        //}
         //if (document.querySelector('.product-banner')) {
 //const reg = /.projects./
           //if  (reg.test(url) ) {
@@ -46,9 +49,7 @@ import { loadDynamicBannerText } from '../components/banner';
   } else {
 
     mobile();
-  }if (document.querySelector('.about')) {
-          loadDynamicBannerText();
-        }
+  }
 
   });
 

@@ -6,8 +6,30 @@
     bottom: 0;
     overflow: hidden;
     max-height: 100vh;
-    background-color: black!important;
-    vertical-align: middle
+    background-color: white!important;
+    vertical-align: middle;
+      cursor:url("purple-circle.png")1 1, auto!important;
+
+    img{
+    width:100%;
+    height: auto;
+    min-width:350px;
+    max-width: 400px;
+    z-index:1;
+position:absolute;
+  top:50%;
+  left:20%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor:url("white-circle.png")1 1, auto!important;
+}
+
+div:hover {
+  cursor:url("white-circle.png")1 1, auto!important;
+
+}
+
+
+
 }
 .about-title {
   position:absolute;
@@ -15,5 +37,29 @@
   left:50%;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
+  z-index:6;
+
+
+  h1,h2, p{
+    color:white!important;
+  }
+
+}
+.carre-red{
+  width: 200vw;
+  height:170vh;
+  min-width:1800px;
+  max-width: 2600px;
+  max-height: 1600px;
+  z-index: 0;
+  background:linear-gradient(to right, pink 0%, pink 50%, pink 75%,pink 100%);
+  clip-path: inset(39% 34% 30% 37%);
+  position:absolute;
+  top:30%;
+  left:40%;
+  transform: translateX(-50%) translateY(-50%);
+
+;
+
 
 }
