@@ -10,6 +10,7 @@ import { model } from '../components/modal';
 import { mobile } from '../components/mobilephone';
 import { slideleftb } from '../components/slideleftb';
 import { homecome } from '../components/homecome';
+import { loadDynamicBannerText } from '../components/banner';
 
 
 
@@ -48,6 +49,7 @@ import { homecome } from '../components/homecome';
 
     mobile();
   }
+  loadDynamicBannerText();
   });
 
 
