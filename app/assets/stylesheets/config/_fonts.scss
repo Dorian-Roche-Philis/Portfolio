@@ -6,14 +6,8 @@
 $body-font: 'Roboto', sans-serif;
 $headers-font: 'Roboto Slab', serif;
 
-html{
-  font-family:$body-font;
-  font-size:16px;
-}
-h1, h2, h3, h4 {
-  font-family: $headers-font;
 
-}
+
 h1{
 font-size: 6vw;
 }
@@ -31,11 +25,23 @@ p{
 }
 
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+ @font-face {
+   font-family: "HKGotesk-Black";
+   src: font-url('HKGotesk-Black.eot');
+   //src: font-url('HKGotesk-Black.eot?#iefix') format('embedded-opentype'),
+        //font-url('HKGotesk-Black.woff') format('woff'),
+        //font-url('HKGotesk-Black.ttf') format('truetype');
+        font-weight: normal;
+    font-style: normal;
+ }
+ $my-font: "HKGotesk-Black";
+ html{
+  font-size:16px;
+}
+h1, h2, h3, h4 {
+  font-family: $headers-font!important;
+
+}
+p > strong {
+  font-family: $headers-font!important;
+}
