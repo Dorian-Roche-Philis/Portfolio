@@ -6,7 +6,7 @@ require("channels")
 import "bootstrap";
 import { projectPlay } from '../components/projectnew';
 import { slideleft } from '../components/slide';
-import { model } from '../components/modal';
+
 import { mobile } from '../components/mobilephone';
 import { slideleftb } from '../components/slideleftb';
 import { homecome } from '../components/homecome';
@@ -37,9 +37,7 @@ import { loadDynamicBannerText } from '../components/banner';
             //slideleft(url);
           //}
        // }
-        if (document.querySelector('.modal')) {
-          model();
-        }
+
         //url = document.location.href;
 
 
