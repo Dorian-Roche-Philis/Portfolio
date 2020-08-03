@@ -48,8 +48,10 @@ import { loadDynamicBannerText } from '../components/banner';
   } else {
 
     mobile();
-  }
-  loadDynamicBannerText();
+  }if (document.querySelector('.about')) {
+          loadDynamicBannerText();
+        }
+
   });
 
 

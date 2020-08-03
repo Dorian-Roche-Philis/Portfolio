@@ -6,9 +6,14 @@
     bottom: 0;
     overflow: hidden;
     max-height: 100vh;
+    background-color: black!important;
+    vertical-align: middle
 }
 .about-title {
-  position:relative;
-  top:25vw;
-  left:25vw;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+
 }
