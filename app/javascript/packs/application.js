@@ -14,9 +14,10 @@ import { loadDynamicBannerText } from '../components/banner';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
-AOS.init();
+
 
       document.addEventListener('turbolinks:load', () => {
+        AOS.init();
 
         if (window.matchMedia("(min-width: 400px)").matches) {
        // console.log(url);
