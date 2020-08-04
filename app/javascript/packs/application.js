@@ -11,6 +11,10 @@ import { mobile } from '../components/mobilephone';
 import { slideleftb } from '../components/slideleftb';
 import { homecome } from '../components/homecome';
 import { loadDynamicBannerText } from '../components/banner';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 
@@ -25,6 +29,7 @@ import { loadDynamicBannerText } from '../components/banner';
 
 
       document.addEventListener('turbolinks:load', () => {
+
         if (window.matchMedia("(min-width: 400px)").matches) {
        // console.log(url);
         if (document.querySelector('.projects')) {
